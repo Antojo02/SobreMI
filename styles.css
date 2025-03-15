@@ -3,57 +3,80 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
-    background-color: #0056b3;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid white;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.columna {
+    flex: 1;
+    min-width: 300px;
+}
+
+.izquierda {
+    max-width: 35%;
+}
+
+.derecha {
+    max-width: 60%;
 }
 
 section {
-    background-color: #fff;
-    margin: 1rem;
-    padding: 1rem;
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #0056b3;
-    border-bottom: 2px solid #0056b3;
-    padding-bottom: 0.5rem;
-}
-
-.trabajo, .educacion {
-    margin-bottom: 1rem;
-}
-
-.fecha {
-    font-style: italic;
-    color: #666;
+    color: #333;
 }
 
 ul {
-    list-style-type: disc;
-    margin-left: 2rem;
+    padding-left: 20px;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
-    background-color: #0056b3;
-    color: #fff;
-    margin-top: 2rem;
-}
-
-a {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    padding: 10px;
+    background: #333;
+    color: white;
 }
