@@ -12,14 +12,15 @@ header {
     color: white;
     padding: 20px;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .foto img {
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-right: 60px;
-    border: 7px solid white;
+    margin-right: 20px;
+    border: 5px solid white;
 }
 
 .info {
@@ -28,15 +29,16 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 p {
     margin: 5px 0;
 }
 .info p {
-    font-size: 20px;
+    font-size: 18px;
 }
+
 main {
     padding: 20px;
 }
@@ -52,14 +54,11 @@ main {
     min-width: 300px;
 }
 
-.izquierda {
-    max-width: 35%;
+.izquierda, .derecha {
+    max-width: 100%;
 }
 
-.derecha {
-    max-width: 60%;
-}
-
+/* Secciones */
 section {
     background: white;
     padding: 20px;
@@ -84,18 +83,29 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 100%) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
+    
     .foto img {
         margin-right: 0;
+        margin-bottom: 15px;
+        width: 130px;
+        height: 130px;
     }
+
     .info {
-        margin-top: 20px;
+        text-align: center;
     }
-    .izquierda, .derecha {
-        max-width: 100%;
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .columna {
+        min-width: 100%;
     }
 }
