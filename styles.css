@@ -67,7 +67,7 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* hacer que sea interactuable cuando pases por encima de algún div destaque o algo*/
+/*Hacer que sea interactuable cuando pases por encima de algún div destaque o algo*/
 section:hover {
     background-color: #716e6e;
 }
