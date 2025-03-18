@@ -16,6 +16,7 @@ header {
 }
 
 .foto img {
+    /*Error 3: Ajustar la imagen para que se vea mejor*/
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -29,7 +30,7 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 p {
@@ -66,6 +67,10 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/*Hacer que sea interactuable cuando pases por encima de algún div destaque o algo*/
+section:hover {
+    background-color: #716e6e;
+}
 
 h2 {
     color: #333;
@@ -81,6 +86,7 @@ footer {
     background: #333;
     color: white;
 }
+
 
 section {
     background: white;
